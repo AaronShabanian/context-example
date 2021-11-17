@@ -15,6 +15,8 @@ export default function Home() {
    * to create a gallery of ItemCard components
   */
 
+  const {items, setItems} = useItems()
+
   const addToCart = (itemName) => {
     /* TODO: Write function that updates the
      * user context object's cart 
@@ -43,8 +45,9 @@ export default function Home() {
           {/* TODO: Map through the items in context 
           * to display an ItemCard with the data for each
           */
+        
           }
-          <p>plants will go here</p>
+          <p>{JSON.stringify(items)}</p>
         </div>
       </main>
     </div>
